@@ -18,3 +18,16 @@ The system includes secure login and operations for two distinct user roles:**Ad
 -Borrow and return books
 -Search for books by ID,Author,Genre and Language
 
+## Technologies And Tools Used
+**Language:**Java
+**Data Storage:**File I/O (Persistent data tracking via 'books.txt')
+
+##Future Enhancements(TO-DO)
+-[]Implement a dynamic user registration system
+-[]Add advanced Exception Handling machanism
+-[]Migrate from CLI to a Graphical User Interface in later stages 
+
+*Developed as a personal Software Engineering project to enhance Java and OOP skills.* 
+
+
+
