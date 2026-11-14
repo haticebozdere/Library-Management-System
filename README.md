@@ -28,6 +28,7 @@ The system includes secure login and operations for two distinct user roles:**Ad
 -[]Migrate from CLI to a Graphical User Interface in later stages 
 
 *Developed as a personal Software Engineering project to enhance Java and OOP skills.* 
+*Hatice Bozdere (Software Engineering Student)*
 
 
 
