@@ -1,3 +1,4 @@
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.InputMismatchException;
@@ -152,7 +153,7 @@ class Main{
     static ArrayList<User> users =new ArrayList<>();
     static ArrayList<Admin> admins=new ArrayList<>();
 
-    static Scanner sc=new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in, StandardCharsets.UTF_8);
 
     public static void main(String[]args){
         loadBooks();
@@ -223,7 +224,7 @@ class Main{
 
             System.out.println();
             System.out.print("====================");
-            System.out.println("LIBRARY MANAGEMENT");
+            System.out.print("LIBRARY MANAGEMENT");
             System.out.println("====================");
             System.out.println("1:Admin Login");
             System.out.println("2:User Login");
@@ -291,7 +292,7 @@ class Main{
         System.out.print("Title: ");
         title=sc.nextLine();
 
-        if(title.matches("[a-zA-ZüÜşŞiİöÖçÇğĞ0-9.'-]+")){
+        if(title.matches("[a-zA-ZüÜşŞıIiİöÖçÇğĞ0-9.'  -]+")){
             break;
         }else{
             System.out.println("Invalid Title!");
@@ -305,7 +306,7 @@ class Main{
         System.out.print("Author: ");
         author=sc.nextLine();
 
-        if(author.matches("[a-zA-ZüÜşŞiİöÖçÇğĞ.'-]+")){
+        if(author.matches("[a-zA-ZüÜşŞıIiİöÖçÇğĞ.'  -]+")){
             break;
         }else{
             System.out.println("Invalid Author!");
@@ -319,7 +320,7 @@ class Main{
         System.out.print("Language: ");
         language=sc.nextLine();
 
-        if(language.matches("[a-zA-ZüÜşŞiİöÖçÇğĞ]+")){
+        if(language.matches("[a-zA-ZüÜşŞıIiİöÖçÇğĞ]+")){
             break;
         }else{
             System.out.println("Invalid Language!");
@@ -339,7 +340,7 @@ class Main{
         System.out.print("Genre: ");
         genre=sc.nextLine();
 
-        if(genre.matches("[a-zA-ZüÜşŞiİöÖçÇğĞ]+")){
+        if(genre.matches("[a-zA-ZüÜşŞıIiİöÖçÇğĞ]+")){
             break;
         }else{
             System.out.println("Invalid Genre");
@@ -402,7 +403,7 @@ class Main{
                 System.out.print("New Title:");
                 String newTitle=sc.nextLine();
 
-                if(newTitle.matches("[a-zA-ZüÜşŞiİöÖçÇğĞ0-9.'-]+")){
+                if(newTitle.matches("[a-zA-ZüÜşŞıIiİöÖçÇğĞ0-9.'  -]+")){
                     book.title=newTitle;
                     break;
                 }else{
@@ -415,7 +416,7 @@ class Main{
                 System.out.print("New Author:");
                 String newAuthor=sc.nextLine();
 
-                if(newAuthor.matches("[a-zA-ZüÜşŞiİöÖçÇğĞ]+")){
+                if(newAuthor.matches("[a-zA-ZüÜşŞıIiİöÖçÇğĞ]+")){
                     book.author=newAuthor;
                     break;
                 }else{
@@ -428,7 +429,7 @@ class Main{
                 System.out.print("New Language:");
                 String newLanguage=sc.nextLine();
 
-                if(newLanguage.matches("[a-zA-ZüÜşŞiİöÖçÇğĞ]+")){
+                if(newLanguage.matches("[a-zA-ZüÜşŞıIiİöÖçÇğĞ]+")){
                     book.language=newLanguage;
                     break;
                 }else{
@@ -460,7 +461,7 @@ class Main{
                 System.out.print("New Genre:");
                 String newGenre=sc.nextLine();
 
-                if(newGenre.matches("[a-zA-ZüÜşŞiİöÖçÇğĞ]+")){
+                if(newGenre.matches("[a-zA-ZüÜşŞıIiİöÖçÇğĞ]+")){
                     book.genre=newGenre;
                     break;
                 }else{
